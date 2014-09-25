@@ -1,6 +1,6 @@
-# Program Name:
-# Author:
-# Date:
+# Program Name:Guess My Number
+# Author:Jacob Snipes
+# Date:9-25-14
 
 # Guess My Number
 #
@@ -18,15 +18,18 @@ print("Try to guess it in as few attempts as possible.\n")
 
 # set the initial values
 the_number = random.randint(1, 100)
-guess = # Create the priming read here
+guess = int(input("Enter Guess Here: "))
 tries = 1
 
 # guessing loop
 while guess != the_number:
-    #put the guessing game logic here
-            
+    if guess > the_number:
+        print("Lower")
+    if guess < the_number:
+        print("Higher")
+           
     tries += 1
-    guess = #Create the following read here
+    guess = int(input("Enter Guess Here: "))
 
 
 print("You guessed it!  The number was", the_number)
