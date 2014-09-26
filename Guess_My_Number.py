@@ -12,7 +12,7 @@
 import random  
 
 #Opening Remarks
-print("\tWelcome to 'Guess My Number!")
+print("\tWelcome to 'Guess My Number'!")
 print("\nI'm thinking of a number between 1 and 100.")
 print("Try to guess it in as few attempts as possible.\n")
 
