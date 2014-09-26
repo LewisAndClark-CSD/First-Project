@@ -1,6 +1,6 @@
-# Program Name:
-# Author:
-# Date:
+# Program Name: Guess_my_number.py
+# Author:Darien Hayes
+# Date:9/26/14
 
 # Guess My Number
 #
@@ -18,7 +18,7 @@ print("Try to guess it in as few attempts as possible.\n")
 
 # set the initial values
 the_number = random.randint(1, 100)
-guess = # Create the priming read here
+guess = int((print "What is your guess: "))
 tries = 1
 
 # guessing loop
