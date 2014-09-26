@@ -1,6 +1,6 @@
-# Program Name:
-# Author:
-# Date:
+# Program Name: Bo's Guessing Machine
+# Author: Bo Meers
+# Date: September 26, 2014
 
 # Guess My Number
 #
@@ -12,25 +12,31 @@
 import random  
 
 #Opening Remarks
-print("\tWelcome to 'Guess My Number'!")
+print("\tWelcome to 'Guess My Number!")
 print("\nI'm thinking of a number between 1 and 100.")
 print("Try to guess it in as few attempts as possible.\n")
 
 # set the initial values
 the_number = random.randint(1, 100)
-guess = # Create the priming read here
+guess = int(input("Guess a number: "))
 tries = 1
 
 # guessing loop
 while guess != the_number:
-    #put the guessing game logic here
-            
-    tries += 1
-    guess = #Create the following read here
+    
+    if guess < the_number:
+          
+	tries += 1
+	guess = int(input("Guess higher: "))
 
+    elif guess > the_number:
 
-print("You guessed it!  The number was", the_number)
-print("And it only took you", tries, "tries!\n")
+	tries += 1
+	guess = int(input("Guess lower: "))
+    
+
+print("You guessed it! The number was", the_number)
+print("And it only took you", tries, "tries!")
 
 #Program Closing  
 input("\n\nPress the enter key to exit.")
