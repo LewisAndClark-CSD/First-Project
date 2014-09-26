@@ -18,7 +18,7 @@ print("Try to guess it in as few attempts as possible.\n")
 
 # set the initial values
 the_number = random.randint(1, 100)
-guess = # Create the priming read here
+guess = input("Guess a number: ")
 tries = 1
 
 # guessing loop
